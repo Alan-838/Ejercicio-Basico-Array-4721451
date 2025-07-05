@@ -13,9 +13,9 @@ let carro = {
     color: "azul",
     electrico: true,
     costo: 32.000
-}
+};
 
-console.log(carro)
+console.log(carro);
 
 // crear 3 objetos 1 persona, 1 electrodomestico con 5 propiedades como minimo cada uno
 
@@ -25,7 +25,7 @@ let guilmoncha = {
     cariñosa: true,
     costo: 0,
     mordelona: true
-}
+};
 
 let mostacha = { 
     raza: "persa",
@@ -33,7 +33,7 @@ let mostacha = {
     cariñosa: true,
     costo: 1000,
     mordelona: false
-}
+};
 
 let captain = { 
     raza: "medio fino",
@@ -41,7 +41,7 @@ let captain = {
     cariñoso: true,
     costo: 500,
     mordelon: true
-}
+};
 
 let Carlitos = { 
     carrera: "Fisico Nuclear",
@@ -49,7 +49,7 @@ let Carlitos = {
     estudioso: false,
     sueldo: 1200,
     trabajador: true
-}
+};
 
 let Refrigeradora = { 
     marca: "LG",
@@ -57,7 +57,7 @@ let Refrigeradora = {
     grande: false,
     precio: 2500,
     resistente: true
-}
+};
 
 let celular = {
     marca: "Xiaomi",
@@ -65,7 +65,7 @@ let celular = {
     precio: 1000,
     pequeno: false,
     resistente: true
-}
+};
 
 let celular2 = {
     marca: "Xiaomi",
@@ -73,7 +73,7 @@ let celular2 = {
     precio: 300,
     resistente: false,
     bonito: false,
-}
+};
 
 let televisor = {
     marca: "LG",
@@ -81,5 +81,49 @@ let televisor = {
     precio: 1000,
     resistente: false,
     pantalla: "LED"
+};
 
-}
+let carro1 = {
+    marca: "Mustang",
+    azul: true,
+    electrico: false,
+    costo: 32.000
+};
+
+console.log(carro1.marca);
+
+//como modifico un valor en un object
+
+carro1.marca="Ferrari";
+
+console.log(carro1.marca);
+
+
+// eliminar una propiedad y valor en un object
+
+delete carro1.marca;
+
+console.log(carro1);
+
+const usuarios = [
+    {nombre: "Carlitos", edad: 35, sexo: "male"},
+    {nombre: "Guillermo", edad: 25, sexo: "male"},
+    {nombre: "Christian", edad: 45, sexo: "male"},
+    {nombre: "Joao", edad: 35, sexo: "male"}
+];
+
+console.table(usuarios);
+
+// añadir un nuevo object al array de usuarios
+
+usuarios[4] = {nombre: "Ronaldo", edad: 55, sexo: "male"};
+
+console.log(usuarios);
+
+usuarios.push({nombre: "Robertino", edad: 45, sexo: "male"});
+
+console.log(usuarios);
+
+usuarios.splice(6, 0, {nombre: "Carolus", edad: 65, sexo: "male"});
+
+console.log(usuarios);
