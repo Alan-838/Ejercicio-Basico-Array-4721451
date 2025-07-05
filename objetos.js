@@ -15,7 +15,7 @@ let carro = {
     costo: 32.000
 }
 
-console.table(carro)
+console.log(carro)
 
 // crear 3 objetos 1 persona, 1 electrodomestico con 5 propiedades como minimo cada uno
 
